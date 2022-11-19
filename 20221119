@@ -1,0 +1,83 @@
+
+# #소수 만들기 12977
+#
+# def isprime(n):
+# #소수일 경우 True 아닐경우 False를 return한다.
+#     for i in range(2,n):
+#         if n % i ==0:
+#             return False
+#     return True
+#
+# from itertolls inport combination
+# def solution(nums):
+#     result= 0
+#     a= list(combinations(nums,3))
+#     for i in a:
+#         if isprime(sum(i)):
+#                     result +=1
+#     return result
+#
+#
+#
+# nums = [1,2,3,4]
+# a=list(combinations(nums,3))
+
+
+
+
+
+
+
+
+# def isprime(n):
+#     for i in range(2,n):
+#         if n % i ==0:
+#             return False
+#     return True
+
+# def solution(number):
+#     result= 0
+#     for i in range(len(number)):
+#         for j in range(i+1,len(number)):
+#             for k in range(j+1,len(number)):
+#                 if number[i]+number[j]+number[k]==0:
+#                     result += 1
+#     return result
+#
+#
+#
+#
+# number = [-2, 3, 0, 2, -5]
+
+
+
+#콜라문제 132267
+# def solution(a, b, n):
+#     total=0
+#     remain=0
+#     while n >= a:
+#         remain=n % a
+#         n=n//a * b
+#         total += n
+#         n += remain
+#     return total
+#
+#
+# a=2
+# b=1
+# n=20
+# print(solution(a,b,n))
+
+
+
+
+
+#옹알이(1) 120956
+def solution(babbling):
+    cnt = 0
+    can = ["aya", "ye", "woo", "ma"]
+    for i in babbling:
+        print(i)
+
+b=["ayaye", "uuuma", "ye", "yemawoo", "ayaa"]
+print(solution(b))
